@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+package-lock.json
 /tmp
 /out-tsc
 # Only exists if Bazel was run
