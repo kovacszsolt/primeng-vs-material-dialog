@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.p-overlay {
+  position: fixed;
+  top: 50% !important;;
+  left: calc(50% - 425px) !important;;
+  display: block !important;
+  opacity: 1 !important;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: unset;
+  width: 850px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+  .ui-overlaypanel-content {
+    padding: unset;
+  }
+}

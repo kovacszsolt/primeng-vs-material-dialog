@@ -1,0 +1,20 @@
+<div class="actions">
+  <h1>Hello</h1>
+  <button type="button" (click)="primeFormVisible=true" pButton label="PrimeNG Dialog"></button>
+  <button type="text" pButton label="PrimeNG Overlay" (click)="overlayShow()"></button>
+  <button mat-raised-button color="primary" (click)="materialShow($event)">Material Dialog DatePicker - {{dateValue}}</button>
+  <button mat-raised-button color="primary" (click)="materialAutocompShow($event)">Material Dialog AutoComplete - {{searchValue}}</button>
+</div>
+
+
+<p-dialog header="Hello PrimeNG" [(visible)]="primeFormVisible">
+  <app-prime (close)="primeFormClose($event)"></app-prime>
+</p-dialog>
+
+
+
+<p-overlayPanel #op [styleClass]="'p-overlay'">
+  <app-prime (close)="overlayShow()"></app-prime>
+</p-overlayPanel>
+
+

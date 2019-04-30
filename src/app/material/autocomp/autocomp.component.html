@@ -1,0 +1,14 @@
+<form (submit)="submit($event)">
+  <mat-form-field class="example-full-width">
+    <input type="text" placeholder="Pick one" aria-label="Number" matInput [matAutocomplete]="auto" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of listSearch" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <p-footer>
+    <button type="submit">Mentés</button>
+  </p-footer>
+
+</form>
